@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import {supabaseBrowser} from '@/lib/supabase-browser';
+export default function Login(){const [error,setError]=useState('');async function signIn(){try{const {error}=await supabaseBrowser().auth.signInWithOAuth({provider:'google',options:{redirectTo:`${window.location.origin}/auth/callback`}});if(error)setError(error.message)}catch(e){setError(String(e))}}return <main className="shell"><div className="panel max-w-lg mx-auto mt-10"><p className="eyebrow">Private records</p><h1 className="text-3xl font-bold my-3">Sign in to save evidence</h1><p className="copy mb-6">Google sign-in protects your own saved demo records. Never enter real third-party candidate information.</p><button className="btn" onClick={signIn}>Continue with Google</button>{error&&<p role="alert" className="mt-4 text-red-600">{error}</p>}</div></main>}
