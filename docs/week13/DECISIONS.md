@@ -16,3 +16,27 @@
 - Push confirmation:
 - Deployment URL:
 - Next session's first move:
+
+## November 5, 2026 — Development session
+
+Decision: Correct the observed invalid-calendar-date bug
+without rebuilding the existing Week 12 application.
+
+Changes:
+- Added strict calendar-date validation.
+- Added an automated regression test.
+- Preserved the existing evaluation workflow.
+
+Verified tests:
+- Before correction: 3 passed, 1 failed.
+- After correction: 4 passed, 0 failed.
+- Production build: successful.
+
+Limitations:
+- No Week 13 deployment verified yet.
+- Live Supabase security remains unverified.
+- No real-user testing claimed.
+
+Next session's first move:
+Verify the pushed correction, complete the security gate,
+and prepare a controlled Vercel deployment.
