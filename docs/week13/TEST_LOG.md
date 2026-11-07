@@ -44,3 +44,34 @@ Security note:
 The filename audit found only .env.example.
 Complete historical secret-content inspection and
 live Supabase RLS enforcement remain NOT VERIFIED.
+
+## November 7, 2026 — Supabase RLS inspection
+
+Production table: public.evidence_records
+
+Verified through Supabase dashboard:
+- RLS enabled.
+- Owner-only SELECT policy present.
+- Owner-only INSERT policy present.
+- Owner-only DELETE policy present.
+- All three policies apply to authenticated users.
+- Ownership conditions compare auth.uid() with user_id.
+
+Database evidence:
+- Existing records: 9.
+- Distinct record owners: 2.
+- Simulated anonymous SELECT: 0 visible records.
+- Simulated authenticated fictional identity: confirmed.
+- Fictional identity SELECT: 0 visible records.
+
+Result: PASS for inspected configuration and simulated reads.
+
+NOT VERIFIED:
+- Actual two-account API isolation.
+- Unauthorized INSERT and DELETE attempts.
+- Server-side validation of direct database submissions.
+- Complete historical credential-content audit.
+
+Safety decision:
+Use fictional evidence only until remaining checks are
+completed or affected functionality is restricted.

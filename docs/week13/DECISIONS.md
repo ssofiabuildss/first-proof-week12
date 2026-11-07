@@ -40,3 +40,23 @@ Limitations:
 Next session's first move:
 Verify the pushed correction, complete the security gate,
 and prepare a controlled Vercel deployment.
+
+## November 7, 2026 — Security verification
+
+Decision:
+Preserve the existing owner-only RLS policies because
+their production configuration matches the intended design.
+
+Evidence:
+- RLS and three ownership policies inspected in Supabase.
+- Nine existing records across two owners.
+- Anonymous and fictional authenticated read simulations
+  returned zero visible records.
+
+Limitation:
+Direct API isolation and unauthorized writes remain unverified.
+No full security PASS is claimed.
+
+Next session's first move:
+Verify direct API restrictions and implement privacy-minimized
+feedback without storing personal data.
