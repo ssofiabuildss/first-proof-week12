@@ -89,3 +89,32 @@ Direct API security testing remains incomplete.
 Next session's first move:
 Verify the production feedback deployment, improve
 the result wording, and finish security restrictions.
+
+## November 8, 2026 — Result clarity improvement
+
+Decision:
+Use the exact Week 13 packet wording for the
+completed-documentation result.
+
+Change:
+The interface now states:
+"Information complete — skills and authenticity not verified."
+
+Rationale:
+A complete administrative record must not be confused
+with a verified skill, authentic credential or employer waiver.
+
+Verification:
+- Automated tests: 4/4 passed.
+- Production build: successful.
+- Live wording check remains pending.
+
+Security limitation:
+Direct API access and unauthorized write restrictions
+remain unverified. Real personal evidence must not
+be submitted during classroom demonstrations.
+
+Next session's first move:
+Verify deployed wording and feedback behavior,
+then complete direct API security checks or enforce
+a restricted fictional-demo mode.

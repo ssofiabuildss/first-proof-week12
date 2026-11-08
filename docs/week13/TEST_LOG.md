@@ -94,3 +94,26 @@ Limitations:
 - Persistence after page refresh not independently confirmed.
 - No real-user feedback or interviews claimed.
 - Production deployment of feedback remains pending.
+
+## November 8, 2026 — Result wording verification
+
+Change:
+Updated the main documented-result explanation to:
+"Information complete — skills and authenticity not verified."
+
+Purpose:
+Avoid implying that completed documentation proves
+skill proficiency or evidence authenticity.
+
+Verified locally:
+- npm test: 4 passed, 0 failed.
+- npm run build: successful.
+- TypeScript: successful.
+- git diff --check: no errors.
+
+Not yet verified:
+- Updated wording visible on production.
+- Independent user comprehension of the wording.
+- Complete direct API security checks.
+
+Status: LOCAL BUILD PASS; PRODUCTION RETEST PENDING.
