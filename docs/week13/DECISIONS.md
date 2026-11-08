@@ -118,3 +118,32 @@ Next session's first move:
 Verify deployed wording and feedback behavior,
 then complete direct API security checks or enforce
 a restricted fictional-demo mode.
+
+## November 8, 2026 — Production evidence reconciliation
+
+Decision:
+Preserve the existing application and document verified
+Week 13 production results.
+
+Evidence:
+- Five meaningful Git commits verified.
+- Five Vercel deployments READY.
+- Fictional Excel workflow confirmed on production.
+- Correct non-certification wording visible.
+- Feedback panel visible on production.
+- Mechanical bug corrected and regression tested.
+
+Security decision:
+Do not accept real personal assessment documents.
+Direct API authorization and write validation remain
+unverified. A visible disclaimer is not a technical
+restriction.
+
+Persona Test:
+Screenshot-based synthetic testing is permitted.
+Unrestricted interactive participant testing is not
+approved until security is verified or writes are disabled.
+
+Next first move:
+Complete direct API security verification or enforce
+and test the restricted-demo fallback.

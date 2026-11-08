@@ -117,3 +117,47 @@ Not yet verified:
 - Complete direct API security checks.
 
 Status: LOCAL BUILD PASS; PRODUCTION RETEST PENDING.
+
+## November 8, 2026 — Verified production results
+
+Production URL:
+https://first-proof-week12.vercel.app/product
+
+Verified from actual production screenshots:
+- Feedback panel visible: PASS.
+- Three predefined feedback choices visible: PASS.
+- Fictional Excel submission: PASS.
+- Administrative result "Documented": PASS.
+- "Information complete — skills and authenticity not verified": PASS.
+- Human-review limitations visible: PASS.
+- Fictional record save confirmation: PASS.
+
+Mechanical bug:
+- Input: 2026-02-30.
+- Expected: Incomplete.
+- Before correction: Documented.
+- After correction: 4 automated tests passed.
+- Production build: PASS.
+- Corrected commit: 4e70800.
+- Vercel redeployment: READY.
+
+Verified Week 13 commits:
+84113e7
+4e70800
+505bd5e
+6318b27
+47f2a48
+
+Vercel: Five production deployments reported READY.
+
+Security:
+- RLS enabled: PASS.
+- Owner-only SELECT, INSERT, DELETE policies: Verified.
+- Simulated anonymous read: PASS.
+- Simulated unrelated authenticated read: PASS.
+- Direct API authorization: NOT VERIFIED.
+- Unauthorized direct writes/deletes: NOT VERIFIED.
+- Server-side status validation: NOT VERIFIED.
+- Restricted-demo enforcement: NOT VERIFIED.
+
+No real-user testing is claimed.
