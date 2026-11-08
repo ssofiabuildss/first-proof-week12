@@ -60,3 +60,32 @@ No full security PASS is claimed.
 Next session's first move:
 Verify direct API restrictions and implement privacy-minimized
 feedback without storing personal data.
+
+## November 8, 2026 — Feedback implementation
+
+Decision:
+Add a minimal browser-local feedback mechanism rather
+than a new database table.
+
+Reason:
+Avoid collecting participant identities or assessment
+content while enabling observable feedback testing.
+
+Changes:
+- Three predefined feedback choices.
+- Browser-local response counts.
+- Clear-local-feedback control.
+
+Evidence:
+- Local UI screenshots showed 3 responses before clearing
+  and 0 responses afterward.
+- Automated tests: 4/4 passed.
+- Production build: successful.
+
+Limitations:
+No centralized analytics or real-user validation claimed.
+Direct API security testing remains incomplete.
+
+Next session's first move:
+Verify the production feedback deployment, improve
+the result wording, and finish security restrictions.
