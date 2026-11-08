@@ -161,3 +161,33 @@ Security:
 - Restricted-demo enforcement: NOT VERIFIED.
 
 No real-user testing is claimed.
+
+## November 8, 2026 — Restricted production demo verification
+
+Security decision:
+Disable client write access to public.evidence_records
+until direct API authorization and server-side validation
+can be independently verified.
+
+Production Supabase verification:
+- REVOKE INSERT, UPDATE, DELETE executed successfully.
+- anon INSERT, UPDATE, DELETE: false.
+- authenticated INSERT, UPDATE, DELETE: false.
+- No explicit INSERT/UPDATE column privileges found.
+- SELECT remained available subject to RLS.
+
+Production browser verification:
+- Signed-in FIRST-PROOF product page loaded.
+- An attempted save returned:
+  "Save failed: permission denied for table evidence_records".
+- Administrative result showed Incomplete for missing fields.
+- Previous saved evidence remained visible.
+
+Result:
+PASS — restricted-demo client write protection.
+
+Limitations:
+- Direct two-account API isolation remains NOT VERIFIED.
+- Unrestricted saving is not approved.
+- No real-user testing is claimed.
+- Screenshots represent actual November 8 tests.

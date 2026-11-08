@@ -147,3 +147,33 @@ approved until security is verified or writes are disabled.
 Next first move:
 Complete direct API security verification or enforce
 and test the restricted-demo fallback.
+
+## November 8, 2026 — Final restricted-demo decision
+
+Decision:
+Keep the existing FIRST-PROOF application available
+for fictional screenshot-based demonstrations.
+
+Security action:
+Revoked INSERT, UPDATE and DELETE table privileges
+from PUBLIC, anon and authenticated.
+
+Verification:
+- Client table-level write permissions disabled.
+- No explicit column-level INSERT/UPDATE grants found.
+- Production save attempt rejected by Supabase.
+
+Rationale:
+The security floor for unrestricted database writes
+could not be fully verified. Disabling those writes
+provides an enforceable restricted-demo boundary.
+
+Operational limitation:
+Existing records remain readable under RLS.
+Users cannot save new evidence through normal
+client permissions.
+
+Next move:
+Begin the screenshot-based synthetic Persona Test.
+Do not claim real-user sessions or unrestricted
+security verification.
