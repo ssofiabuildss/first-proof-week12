@@ -191,3 +191,33 @@ Limitations:
 - Unrestricted saving is not approved.
 - No real-user testing is claimed.
 - Screenshots represent actual November 8 tests.
+
+## November 8, 2026 — Priority UI correction
+
+Reported participants:
+Six participants, P1-P6. P1-P3 known; P4-P6 strangers.
+
+Reported problem:
+P1, P3 and P6 mentioned the save permission error.
+P3 and P6 could not confidently determine whether
+their record had been saved.
+
+Priority:
+Separate administrative documentation evaluation
+from persistent saving.
+
+Before evidence:
+November 8 screenshots show the Documented outcome
+and an independent permission-denied save message.
+
+Implementation:
+- Visible fictional-demo and saving-disabled notice.
+- Button explicitly says the check does not save.
+- Documented result explicitly states no record was saved.
+- Product form no longer attempts a Supabase INSERT.
+- Database restrictions remain unchanged.
+
+After-browser screenshots:
+PENDING until deployed interface is inspected.
+
+No new real-user retest is claimed.

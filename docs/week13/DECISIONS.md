@@ -177,3 +177,28 @@ Next move:
 Begin the screenshot-based synthetic Persona Test.
 Do not claim real-user sessions or unrestricted
 security verification.
+
+## November 8, 2026 — Highest-priority user finding
+
+Decision:
+Correct the confusion between administrative evaluation
+and database saving without reactivating persistence.
+
+Basis:
+Six reported participants, including three strangers.
+P1, P3 and P6 mentioned the permission error.
+P3 and P6 could not tell whether saving succeeded.
+
+Correction:
+Use a fictional demonstration with an explicit
+saving-disabled warning before submission.
+Clarify that Documented means required fields are
+complete, not saved or independently verified.
+
+Security:
+Keep the existing Supabase write restriction.
+No new features or persistence mechanisms.
+
+Next move:
+Verify the deployed UI, capture after screenshots,
+and conduct an independent comprehension retest.
