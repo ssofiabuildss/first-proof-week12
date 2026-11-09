@@ -221,3 +221,29 @@ After-browser screenshots:
 PENDING until deployed interface is inspected.
 
 No new real-user retest is claimed.
+
+## November 8, 2026 — Priority-fix final verification
+
+Actual automated test results:
+- 7 tests executed.
+- 7 passed.
+- 0 failed.
+- npm run build: successful.
+- TypeScript: successful.
+
+Production verification:
+- Fictional-demo warning visible before evaluation.
+- Button explicitly states the check does not save.
+- Documented result explains that no record was saved.
+- Existing Supabase write restriction preserved.
+- Before-and-after screenshots captured.
+
+Git commit:
+6d595b2f7783cb169c7643d52caa3dfaf069b804
+
+Deployment:
+https://first-proof-week12-a3og7o110-ssofia1.vercel.app
+
+Remaining limitation:
+No independent participant comprehension retest has
+been verified after the correction.
