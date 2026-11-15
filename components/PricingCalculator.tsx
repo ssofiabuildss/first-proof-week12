@@ -69,6 +69,7 @@ export default function PricingCalculator(){
       <header className="mb-7 flex flex-wrap items-center justify-between gap-4">
         <div><p className="text-xs font-bold uppercase tracking-[.25em] text-teal-700">FIRST-PROOF · WEEK 14</p>
           <h1 className="mt-1 text-3xl font-black tracking-tight sm:text-4xl">Pricing &amp; Scenarios</h1>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">FIRST-PROOF is an educational prototype that helps students organize self-reported academic project evidence. It does not verify skills, authenticate evidence, or issue certifications. This page presents hypothetical pricing and financial scenarios, not real offers.</p>
           <p className="mt-2 text-sm text-slate-600">An internal decision aid. Organize evidence, do not certify it.</p></div>
         <span className="rounded-full border border-teal-200 bg-teal-50 px-4 py-2 text-xs font-bold uppercase tracking-wide text-teal-800">SIMULATED · NOT A REAL OFFER</span>
       </header>
