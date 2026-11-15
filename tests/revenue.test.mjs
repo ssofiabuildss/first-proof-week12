@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { calculateRevenue, calculateCohortRevenue, validateRevenue } from '../lib/pricing.ts';
+const base={leadsPerMonth:100,conversionPercent:10,monthlyPrice:99};
+test('recurring 100 x 10% x 99 produces 990 monthly, 11880 annually',()=>assert.deepEqual(calculateRevenue(base),{expectedConversionsPerMonth:10,monthlyRevenue:990,annualRevenue:11880}));
+test('0% conversion produces zero',()=>assert.equal(calculateRevenue({...base,conversionPercent:0}).monthlyRevenue,0));
+test('100% conversion produces 9900 monthly',()=>assert.equal(calculateRevenue({...base,conversionPercent:100}).monthlyRevenue,9900));
+test('0 price valid, zero revenue',()=>assert.equal(calculateRevenue({...base,monthlyPrice:0}).annualRevenue,0));
+test('negative prospects rejected',()=>assert.match(validateRevenue({...base,leadsPerMonth:-1}),/prospects/i));
+test('fractional prospect count rejected',()=>assert.match(validateRevenue({...base,leadsPerMonth:1.4}),/whole/i));
+test('conversion over 100 rejected',()=>assert.match(validateRevenue({...base,conversionPercent:101}),/conversion/i));
+test('negative monthly price rejected',()=>assert.match(validateRevenue({...base,monthlyPrice:-1}),/price/i));
+test('nonfinite revenue inputs rejected',()=>assert.match(validateRevenue({...base,conversionPercent:NaN}),/finite/i));
+test('cohort one-time billing is separate: 2 cohorts at 1700',()=>assert.deepEqual(calculateCohortRevenue(2,1700),{monthlyRevenue:3400,annualRevenue:40800}));
+test('negative cohort count rejected',()=>assert.throws(()=>calculateCohortRevenue(-1,1700)));
