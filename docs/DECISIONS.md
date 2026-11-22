@@ -19,3 +19,10 @@
 - After-deployment verification: PENDING.
 - Security: Supabase Auth and RLS remain UNVERIFIED for real-data use.
 - Next move: commit, push, verify Vercel deployment, and capture corrected footer.
+## Week 15 — distribution decisions
+- Direct opt-in outreach, free educational access, curate first. No established institutional partners or customers.
+- Keep inherited history intact; use review branch and production approval gate.
+- Static Spanish launch page; fictional data only, no input, tracking, account or upload. Existing Auth/RLS unverified.
+- Three finished assets and three sketches; versioned private worksheet; no false legitimacy or employment promises.
+- Initial 3 hours / MXN 450 imputed, six-hour ceiling; one justified revision only; stop or curate without incremental benefit.
+- GitHub create branch and packet update returned HTTP 403; retry also returned 403. Vercel authorization and eight historical READY deployments confirmed. No Week 15 remote write or deployment yet.

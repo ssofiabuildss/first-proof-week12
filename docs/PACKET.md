@@ -174,3 +174,44 @@ Implementation agent must add a pricing route, pure cohort and revenue calculato
 
 ## 15. Evidence still required
 Actual repository commits; 2 deployment URLs/history entries; live functional URL; test results and genuine bug-fix screenshot; genuine payer interview evidence (or explicitly pending); tier, revenue model and `/about` memo screenshots; independent persona transcript and screenshot-based report; 3:30 demo recording including 30 sec “what changed my mind”; full unedited build chat PDF; verified applicability of Week 14 Crystal Ball Brief on the previous page (not included in this ZIP).
+# Week 15 — Distribution — pre-code packet
+Sofía López Carvajal | Team 4 | USER | FIRST-PROOF | 21 November 2026
+
+## Problem in my words and exact user
+Mexican university students applying for their first internship need to explain their personal contributions to existing academic projects. Drive, assignments, career guides, templates and ChatGPT are free alternatives. Our method organizes information; it does not authenticate work, verify skills, certify qualifications or guarantee employment.
+## Success, scope and architecture
+A student opens /launch, sees three completed assets, reveals a fictional structured example and downloads a private worksheet without providing personal information. Add a static Next.js App Router route using React 19, TypeScript and CSS to the existing Next 16 repository; retain existing routes. No new database, inputs, accounts, uploads, advertising, checkout, institutional reporting or tracking. Existing Supabase RLS is unverified; no real records authorized. Review branch before production.
+## Mockup
+Image-generated reference required before implementation; preserve separately if available. Do not mislabel screenshots or wireframes. Forest #243A32, sage #B8C9B5, cream #F4F1EA, accent #CF9A70. Accessible sans-serif; hook, example, action, limitation; no badges or logos.
+## Workflow
+```mermaid
+flowchart TD
+ A[Founder curates official resources] --> B[Founder drafts original Spanish assets]
+ B --> C[Human checks claims and approves]
+ C --> D[Student opts in via shareable page]
+ D --> E[Browser shows fictional method]
+ E --> F[Student downloads private worksheet]
+ F --> G[Voluntary feedback outside app]
+```
+## Global benchmarks and Mexican adaptation
+Forage https://www.theforage.com/ offers self-paced simulations; Big Interview https://www.biginterview.com/ offers structured interview preparation; Harvard https://careerservices.fas.harvard.edu/ offers career guidance. Link originals; do not copy proprietary resources or imply partnership. Spanish, mobile-friendly, free preparation for existing Mexican academic experience.
+## Three-year direction
+Year 1 validate added value over free alternatives. Year 2 consider career-center distribution if safe and useful. Year 3 consider institutional support only with confirmed buyer and sustainable delivery; otherwise curate or discontinue.
+## Launch playbook
+Direct opt-in sharing of /launch; free access. Three series, six concepts: De tarea a experiencia (1 completed four-panel carousel, 2 sketch individual contribution); Antes de tu entrevista (3 completed seven-question private PDF worksheet with fictional example, version/date/latest link, 4 sketch three questions); Sin falsas promesas (5 completed yes/no infographic, 6 sketch privacy checklist). Three formats. Fictional input market research -> context, contribution, evidence, relevance, remove unsupported claims -> structured output. CTA reveal and download. Brand voice practical, transparent, respectful. Rewrite “Prove your skills and secure your dream internship” to “Organiza tus proyectos académicos y prepara ejemplos para tu primera entrevista.”
+## Six-stage production process
+| Stage | Input | Output | Quality check | Accountable role |
+|---|---|---|---|---|
+| Research | Audience, capabilities, official resources | Concept | Relevance and reliability | USER |
+| Writing | Approved research | Spanish draft | Practical, transparent, respectful | USER |
+| Visual production | Draft and brand | Asset | Mobile readability and no credential symbols | OPERATOR |
+| Evidence and claim checking | Claims and functionality | Corrected claims | No unsupported benefits | USER |
+| Style review | Validated asset | Consistent voice | Local relevance and CTA | OPERATOR |
+| Revision | Actual feedback | Corrected asset | Human approval before publication | Founder |
+AI assists; humans accountable. Approval pending.
+## Test plan and distribution
+Run npm test and npm run build; verify inherited routes, /launch, all assets and links, mobile rendering, actual PDF, accurate example, absence of data collection or unsupported claims, secret scan. Record actual failures and fixes. Up to 10 voluntary students; compare against free alternatives; targets 90% comprehension, 80% independent completion, 70% meaningful improvement, 70% faster completion, 50% voluntary reuse among eligible. No results yet.
+## Blueprint and shadow
+Three authorized hours / MXN 450 imputed labor; six-hour weekly ceiling; no paid advertising; 30 minutes maximum support, contain critical incidents within 24h. One justified revision only, MXN 900 cumulative. Stop or curate if no incremental benefit. Financial shadow: monetizing insecurity; operational shadow: misleading redistribution; USER shadow: false legitimacy. Version and withdraw/correct misleading assets. No real uploads or credential claims. Institutional funding requires confirmed buyer, safe sustainable delivery. Human approval before publication.
+
+Generated reference: docs/assets/week15-mockup.png. Concept only; generated date and symbols are not implementation facts. Final assets omit credential-like symbols and use 21 November 2026.
