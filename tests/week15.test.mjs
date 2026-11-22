@@ -9,3 +9,17 @@ test('finished assets, fictional demonstration, working anchor targets',()=>{for
 test('no public form, storage, network writes or obvious secret markers in new source',()=>{assert.doesNotMatch(src,/<(?:input|form|textarea)\b|localStorage|fetch\(|service_role|process\.env|api[_-]?key/i);assert.match(src,/habilidades y autenticidad no verificadas/)});
 test('PDF signature and download target',()=>{assert.equal(pdf.subarray(0,5).toString(),'%PDF-');assert.match(src,/\/week15\/guia-privada-v1\.pdf/);assert.match(src,/download/)});
 test('responsive rules present (source check only)',()=>{assert.match(css,/@media\(max-width:600px\)/);assert.match(css,/overflow-x:auto/)});
+
+test('P15-01 fictional interview answer and safeguards',()=>{
+  assert.ok(src.includes('Así podrías explicarlo en una entrevista'));
+  assert.ok(src.includes('Pregunta del entrevistador:'));
+  assert.ok(src.includes('Cuéntame sobre un proyecto universitario'));
+  assert.ok(src.includes('Después — ejemplo de respuesta'));
+  assert.ok(src.includes('Durante la universidad participé'));
+  assert.ok(src.includes('Mi aportación fue organizar los datos'));
+  assert.ok(src.includes('hoja de cálculo y análisis descriptivo'));
+  assert.ok(src.includes('presentación y la tabla de resultados'));
+  assert.ok(src.includes('Describe únicamente tu aportación'));
+  assert.ok(src.includes('evita compartir información confidencial'));
+  assert.ok(src.includes('FIRST-PROOF organiza información; no verifica ni certifica habilidades.'));
+});
