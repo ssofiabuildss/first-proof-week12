@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const src=readFileSync(new URL('../app/launch/page.tsx',import.meta.url),'utf8');
+const css=readFileSync(new URL('../app/launch/launch.css',import.meta.url),'utf8');
+const pdf=readFileSync(new URL('../public/week15/guia-privada-v1.pdf',import.meta.url));
+test('six concepts and four carousel panels',()=>{for(let n=1;n<=6;n++) assert.ok(src.includes(`Concepto ${n} ·`));assert.equal((src.match(/className="fppanel"/g)||[]).length,4)});
+test('finished assets, fictional demonstration, working anchor targets',()=>{for(const id of ['asset1','asset3','asset5','ejemplo']) assert.ok(src.includes(`id="${id}"`)); for(const [,id] of src.matchAll(/href="#([^"]+)"/g)) assert.ok(src.includes(`id="${id}"`));assert.match(src,/<details>/);assert.match(src,/Resultado ficticio/)});
+test('no public form, storage, network writes or obvious secret markers in new source',()=>{assert.doesNotMatch(src,/<(?:input|form|textarea)\b|localStorage|fetch\(|service_role|process\.env|api[_-]?key/i);assert.match(src,/habilidades y autenticidad no verificadas/)});
+test('PDF signature and download target',()=>{assert.equal(pdf.subarray(0,5).toString(),'%PDF-');assert.match(src,/\/week15\/guia-privada-v1\.pdf/);assert.match(src,/download/)});
+test('responsive rules present (source check only)',()=>{assert.match(css,/@media\(max-width:600px\)/);assert.match(css,/overflow-x:auto/)});
