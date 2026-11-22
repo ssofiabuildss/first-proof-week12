@@ -215,3 +215,37 @@ Run npm test and npm run build; verify inherited routes, /launch, all assets and
 Three authorized hours / MXN 450 imputed labor; six-hour weekly ceiling; no paid advertising; 30 minutes maximum support, contain critical incidents within 24h. One justified revision only, MXN 900 cumulative. Stop or curate if no incremental benefit. Financial shadow: monetizing insecurity; operational shadow: misleading redistribution; USER shadow: false legitimacy. Version and withdraw/correct misleading assets. No real uploads or credential claims. Institutional funding requires confirmed buyer, safe sustainable delivery. Human approval before publication.
 
 Generated reference: docs/assets/week15-mockup.png. Concept only; generated date and symbols are not implementation facts. Final assets omit credential-like symbols and use 21 November 2026.
+
+
+## Week 15 — Exploratory distribution, Persona findings and P15-01
+
+### Actual distribution evidence
+Two real participants reviewed the carousel and private worksheet.
+
+P01 understood the educational purpose, target audience and non-certification boundary. The market research example was clear. PDF access without assistance was reported. Preferred FIRST-PROOF's structured approach. Estimated times: FIRST-PROOF 10–15 minutes, Word/Notes 20 minutes, ChatGPT 5–10 minutes. Identified limited differentiation from portfolios, LinkedIn and ChatGPT. Requested diverse examples and a complete interview answer. Expressed free reuse intention and uncertainty about a subscription.
+
+P02 understood the educational purpose after initial confusion between recruitment, portfolio and interview preparation. Understood non-certification. Found the example partially clear and reported opening the PDF without assistance. Estimated times: FIRST-PROOF 15 minutes, Word/Notes 10 minutes, ChatGPT 5 minutes. Preferred ChatGPT. Recognized individual contribution, evidence and confidentiality. Requested a complete answer and more interaction. Reuse intention was conditional.
+
+Both reported successful PDF access and understood non-certification. Only one preferred FIRST-PROOF. These are exploratory self-reports from two participants, not full Blueprint validation. Times are estimates, not measured experiments. Independent completion, objective improvement, actual reuse, recurring demand and willingness to pay remain unestablished.
+
+### Independent synthetic Persona Test
+Daniela Ruiz reviewed seven production screenshots and the actual worksheet PDF.
+- P15-01 MEDIUM: missing final interview-answer demonstration.
+- P15-02 MEDIUM: limited differentiation.
+- P15-03 MEDIUM: limited example diversity.
+- P15-04 LOW: mixed-language navigation.
+- P15-05 LOW: limited worksheet writing space.
+No HIGH finding. Synthetic screenshot-based evidence, not an additional real participant or functional test.
+
+### Founder decision and correction
+Founder authorized one bounded correction addressing P15-01, supported by both real participants and the synthetic persona.
+
+Before: structured context, contribution and evidence without a complete natural interview response.
+
+Authorized after-state: add a fictional interview question, a weak initial answer, a complete first-person model answer and explicit privacy/non-certification safeguards inside the existing demonstration.
+
+No new asset, data collection, authentication, AI generation, payment or database functionality. PDF v1.0 remains unchanged. Preserve all six concepts and three finished assets.
+
+P15-02 through P15-05 remain open. P15-01 remains pending deployment and independent recheck.
+
+Tests and production verification must be recorded from actual execution. No full Blueprint success or security audit claimed.
