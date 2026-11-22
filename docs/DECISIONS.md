@@ -26,3 +26,13 @@
 - Three finished assets and three sketches; versioned private worksheet; no false legitimacy or employment promises.
 - Initial 3 hours / MXN 450 imputed, six-hour ceiling; one justified revision only; stop or curate without incremental benefit.
 - GitHub create branch and packet update returned HTTP 403; retry also returned 403. Vercel authorization and eight historical READY deployments confirmed. No Week 15 remote write or deployment yet.
+
+## Week 15 — Local execution and human approval
+- Founder approved the visual identity, educational assets and publication.
+- Reported local execution: 32/32 tests passed and production build succeeded.
+- Security warning identified; Next.js upgraded from 16.4.3 to 16.4.6.
+- Turbopack and PostCSS compatibility corrected.
+- Security commit: 330bee7.
+- Retest: 32/32 passed; production build succeeded again.
+- Live Supabase RLS remains unverified.
+- Real distribution and independent persona testing remain pending.
